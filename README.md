@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+Your task is to implement two components using Styled Components in React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requirements
+Use Styled Components to define both components. Don't create any new React components, it's unnecessary.
 
-## Available Scripts
+Tag component
+Accept two properties: color (default value: red) and borderRadius (default value: 1em).
+The Tag component should use a span element.
+The Tag component should have:
+display equal to inline-block;
+padding equal to 0.5em;
+background color equal to the color property;
+border radius equal to the borderRadius property.
+Remember to export your component with the name Tag, as it's necessary for the tests to pass.
 
-In the project directory, you can run:
+Icon component
+The Icon component should use an img element.
+The Icon component should be blurred (6px blur).
+If the Icon component is used inside the Tag component, remove the blur while hovering over the icon (using Styled Components).
+Remember to export your component with the name Icon, as it's necessary for the tests to pass.
 
-### `npm start`
+Available tools/packages
+JavaScript ES2020
+Styled Components v5.2.1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Example usage of your MyTabsComponent component:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<MyTabsComponent>
+  <div title={"Section title 1"}>Content of section 1</div>
+  <div title={"Section title 2"}>Content of section 2</div>
+</MyTabsComponent>
+The above example should render this structure:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    <div class="tabs">
+        <button class="btn-active">Section title 1</button>
+        <button class="btn">Section title 2</button>
+        <div class="view">
+            Content of section 1
+        </div>
+    </div>
